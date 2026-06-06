@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.ems.dao.EmployeeDAO" %>
+<%@ page import="com.ems.dao.EmployeeDAO, com.ems.dao.PayslipDAO" %>
 <%
     response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     response.setHeader("Pragma", "no-cache");
@@ -16,6 +16,7 @@
     EmployeeDAO dao = new EmployeeDAO();
     int empCount  = dao.getEmployeeCount();
     int deptCount = dao.getDepartmentCount();
+    int payslipCount = new PayslipDAO().getPayslipCount();
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -97,7 +98,7 @@
                         <i class="bi bi-receipt" style="color:#f39c12;"></i>
                     </div>
                     <div>
-                        <h3>—</h3>
+                        <h3><%= payslipCount %></h3>
                         <p>Payslips</p>
                     </div>
                 </div>
