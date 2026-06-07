@@ -41,7 +41,7 @@
         <i class="bi bi-person-plus"></i> Add Employee
     </a>
     <div class="nav-section">Payslip</div>
-    <a href="#"><i class="bi bi-receipt"></i> Generate Payslip</a>
+    <a href="<%= request.getContextPath() %>/admin/generatePayslip"><i class="bi bi-receipt"></i> Generate Payslip</a>
     <div class="nav-section">Account</div>
     <a href="<%= request.getContextPath() %>/logout"><i class="bi bi-box-arrow-left"></i> Logout</a>
 </div>
