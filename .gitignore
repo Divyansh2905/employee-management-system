@@ -16,5 +16,12 @@ target/
 .DS_Store
 Thumbs.db
 
-# Java
 *.class
+*.tmp
+*.bak
+*.swp
+
+.idea/
+.vscode/
+
+uploads/

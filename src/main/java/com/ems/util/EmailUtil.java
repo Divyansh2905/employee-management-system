@@ -9,8 +9,8 @@ import java.util.Properties;
 
 public class EmailUtil {
 
-    private static final String FROM_EMAIL = "divyansh2905@gmail.com";
-    private static final String APP_PASSWORD = "gdkmwtyopfmzsyra";
+    private static final String FROM_EMAIL = "YOUR_EMAIL";
+    private static final String APP_PASSWORD = "YOUR_APP_PASSWORD";
     private static final String HOST = "smtp.gmail.com";
 
     public static boolean sendPayslipEmail(Employee emp, Payslip payslip) {
